@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <title>JavaScript Applications without a Backend</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div id="view-container"></div>
+
+    <!-- Top page -->
+    <template id="top-page">
+        <h1>SPA demo site</h1>
+        <ul>
+            <li><a id="link-to-private" href="/private">Private page</a></li>
+        </ul>
+        <button id="btn-login" disabled="true">Log in</button>
+        <button id="btn-logout" disabled="true">Log out</button>
+    </template>
+
+    <!-- Private page -->
+    <template id="private-page">
+        <h1>Whisper</h1>
+        <p id="to"></p>
+        <p id="private-contents"></p>
+        <a href="/" id="link-to-top">Top page</a>
+    </template>
+
+    <script src="https://cdn.auth0.com/js/auth0-spa-js/1.13/auth0-spa-js.production.js"></script>
+    <script src='./app.js'></script>
+</body>
+
+</html>
